@@ -84,10 +84,12 @@
 
 #define REASINGS_STATIC_INLINE     // NOTE: By default, compile functions as static inline
 
+#ifndef EASEDEF
 #if defined(REASINGS_STATIC_INLINE)
     #define EASEDEF static inline
 #else
     #define EASEDEF extern
+#endif
 #endif
 
 #include <math.h>       // Required for: sinf(), cosf(), sqrtf(), powf()
